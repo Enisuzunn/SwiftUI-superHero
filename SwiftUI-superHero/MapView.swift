@@ -8,14 +8,19 @@
 import SwiftUI
 import MapKit
 
-struct MapView: View {
-    @State var region = MKCoordinateRegion(
-        center: superHeroArray[1].coordinateLocation, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
-    var body: some View {
-        Map(coordinateRegion: $region)
+struct MapView: UIViewRepresentable {
+    var coordinate : CLLocationCoordinate2D
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        let span = MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
+        let region = MKCoordinateRegion(center: coordinate, span: span)
+        uiView.setRegion(region, animated: true)
     }
+    func makeUIView(context: Context) -> MKMapView {
+        MKMapView(frame: .zero)
+    }
+    
 }
 
 #Preview {
-    MapView()
+    MapView(coordinate: superHeroArray[0].coordinateLocation)
 }
