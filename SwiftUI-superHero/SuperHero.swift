@@ -12,7 +12,7 @@ import CoreLocation
 struct SuperHero: Identifiable {
     var id = UUID()
     var nickName: String
-    var raelName: String
+    var realname: String
     var pictureName: String
     var city: String
     var job: String
@@ -26,10 +26,10 @@ struct Coordinate{
     var latitude : Double
     var longitude : Double
 }
-let batman = SuperHero(nickName: "Batman", raelName: "Bruce Wayne", pictureName: "batman", city: "Gotham City", job: "Detective", coordinate: Coordinate(latitude: 41.886907, longitude: -87.627904))
-let ironman = SuperHero(nickName: "Ironman", raelName: "Tony Stark", pictureName: "ironman", city: "New York City", job: "Engineer", coordinate: Coordinate(latitude: 40.700794, longitude: -73.989866))
-let doctorStrange = SuperHero(nickName: "Doctor Strange", raelName: "Stephen Strange", pictureName: "doctorstrange", city: "New York City", job: "Physician", coordinate: Coordinate(latitude: 40.938883, longitude: -73.886937))
-let spiderman = SuperHero(nickName: "Spiderman", raelName: "Peter Parker", pictureName: "spiderman", city: "New York City", job: "Photographer", coordinate: Coordinate(latitude: 41.768902, longitude: -72.674390))
-let aquaman = SuperHero(nickName: "Aquaman", raelName: "Arthur Curry", pictureName: "aquaman", city: "Metropolis", job: "Actor", coordinate: Coordinate(latitude:46.086006, longitude: -123.649603 ))
+let batman = SuperHero(nickName: "Batman", realname: "Bruce Wayne", pictureName: "batman", city: "Gotham City", job: "Detective", coordinate: Coordinate(latitude: 41.886907, longitude: -87.627904))
+let ironman = SuperHero(nickName: "Ironman", realname: "Tony Stark", pictureName: "ironman", city: "New York City", job: "Engineer", coordinate: Coordinate(latitude: 40.700794, longitude: -73.989866))
+let doctorStrange = SuperHero(nickName: "Doctor Strange", realname: "Stephen Strange", pictureName: "doctorStrange", city: "New York City", job: "Physician", coordinate: Coordinate(latitude: 40.938883, longitude: -73.886937))
+let spiderman = SuperHero(nickName: "Spiderman", realname: "Peter Parker", pictureName: "spiderman", city: "New York City", job: "Photographer", coordinate: Coordinate(latitude: 41.768902, longitude: -72.674390))
+let aquaman = SuperHero(nickName: "Aquaman", realname: "Arthur Curry", pictureName: "aquaman", city: "Metropolis", job: "Actor", coordinate: Coordinate(latitude:46.086006, longitude: -123.649603 ))
 let superHeroArray = [batman, ironman, doctorStrange, spiderman, aquaman]
 

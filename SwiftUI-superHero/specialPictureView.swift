@@ -10,6 +10,7 @@ import SwiftUI
 struct specialPictureView: View {
     var image : Image
     var body: some View {
+        
         image
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -19,5 +20,5 @@ struct specialPictureView: View {
 }
 
 #Preview {
-    specialPictureView(image: Image("aquaman"))
+    specialPictureView(image: Image("doctorStrange"))
 }
